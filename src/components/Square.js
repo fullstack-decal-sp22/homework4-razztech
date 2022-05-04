@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import './styles/Square.css';
 
-function Square() {
+function Square(props) {
     return (
-        <button className="square">
-            {/* TODO */}
+        <button onClick={props.onClick} className="square">
+            {props.value}
         </button>
-    )
+    );
 }
 
 export default Square;
